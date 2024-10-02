@@ -7,6 +7,7 @@ export default function Home() {
         <Wrapper className="main_home">
             <div className="home">
                 <HeroSection />
+                <div>Hallllllllllllllllllllllo</div>
                 <div className="main_title">
                     <h2>مؤسسة طريق التعمير للمقاولاتة
                         <br />

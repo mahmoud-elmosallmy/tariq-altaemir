@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import Header from "./Components/Header/Header";
 import Home from "./Pages/Home/Home";
-import About from "./Pages/Aboue/About";
-import OurBusiness from "./Pages/Our_business/Our_business";
-import Contact from "./Pages/Contact/Contact";
-import ErrorPage from "./Pages/ErrorPage/ErrorPage";
+// import About from "./Pages/Aboue/About";
+// import OurBusiness from "./Pages/Our_business/Our_business";
+// import Contact from "./Pages/Contact/Contact";
+// import ErrorPage from "./Pages/ErrorPage/ErrorPage";
 import { GlobalStyle } from "./GlobalStyle";
 import styled, { ThemeProvider } from "styled-components";
 
@@ -44,10 +44,10 @@ export default function App() {
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
+            {/* <Route path="/about" element={<About />} />
             <Route path="/ourbusiness" element={<OurBusiness />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/*" element={<ErrorPage />} />
+            <Route path="/*" element={<ErrorPage />} /> */}
           </Routes>
         </Design>
       </ThemeProvider>
