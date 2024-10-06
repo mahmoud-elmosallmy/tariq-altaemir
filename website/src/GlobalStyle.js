@@ -164,31 +164,55 @@ input, textarea{
     font-size: 1.8rem;
     cursor: pointer;
     }
+  // ===============================================
 
-@media (min-width: ${({ theme }) => theme.media.larg}) {
-    .container {
-      width: 1170px;
-      // padding: 0 3.2rem;
-  }
-}
-@media (min-width: ${({ theme }) => theme.media.tab}) {
-    .container {
-      // max-width: 130rem;
-      padding: 0 3.2rem;
-  }
-  .container {
-    width: 970px;
-  }
-}
+// @media (max-width: 767PX}) {
+//   .container {
+//     width: 1170px;
+//   }
+// }
+// @media (min-width: 768PX}) {
+//   .container {
+//     width: 1170px;
+//   }
+// }
+// @media (min-width: 992PX}) {
+//   .container {
+//     width: 1170px;
+//   }
+// }
+// @media (min-width: 1200X}) {
+//   .container {
+//     width: 1170px;
+//   }
+// }
 
-@media (min-width: ${({ theme }) => theme.media.mobile}) {
-    html {
-    font-size: 50%;
-  }
-    .container {
-      width: 750px;
-    }
-}
+
+// ===============================================
+// @media (min-width: ${({ theme }) => theme.media.larg}) {
+//     .container {
+//       width: 1170px;
+//       // padding: 0 3.2rem;
+//   }
+// }
+// @media (min-width: ${({ theme }) => theme.media.tab}) {
+//     .container {
+//       // max-width: 130rem;
+//       padding: 0 3.2rem;
+//   }
+//   .container {
+//     width: 970px;
+//   }
+// }
+
+// @media (min-width: ${({ theme }) => theme.media.mobile}) {
+//     html {
+//     font-size: 50%;
+//   }
+//     .container {
+//       width: 750px;
+//     }
+// }
 
 .grid{
   gap: 3.2rem;

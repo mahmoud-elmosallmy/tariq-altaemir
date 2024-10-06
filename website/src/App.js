@@ -40,7 +40,7 @@ export default function App() {
   return (
       <ThemeProvider theme={theme}>
         <GlobalStyle/>
-        <Design className="container">
+        {/* <Design className="container"> */}
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -49,7 +49,7 @@ export default function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/*" element={<ErrorPage />} />
           </Routes>
-        </Design>
+        {/* </Design> */}
       </ThemeProvider>
   );
 }
