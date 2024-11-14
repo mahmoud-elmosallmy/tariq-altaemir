@@ -5,7 +5,7 @@ export default function CarouselsSlide() {
   return (
     <CarouselsSlideStyle>
       <MDBCarousel showIndicators showControls fade className='carousel_box'>
-        <MDBCarouselItem itemId={1}>
+        <MDBCarouselItem itemId={1} className='carousel_box'>
           <img src='https://i.pinimg.com/736x/47/7a/9a/477a9a12e5e4cafc38719f5e7bf6be35.jpg' className='d-block w-100' alt='...' />
           <MDBCarouselCaption>
             <h5>First slide label</h5>
@@ -50,13 +50,13 @@ export default function CarouselsSlide() {
 const CarouselsSlideStyle = styled.div`
 
 
-.img {
-  height: 568px;
+img {
+  height: 560px;
 }
-@media screen and (max-width: 767px) {
-.img {
-  height: 414px
-}
+@media (max-width: 767px) {
+  .carousel_box .carousel-item img  {
+      height: 400px;!important 
+  }
 }
 `
 
