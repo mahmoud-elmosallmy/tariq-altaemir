@@ -55,7 +55,7 @@ img {
 }
 @media (max-width: 767px) {
   .carousel_box .carousel-item img  {
-      height: 400px;!important 
+      height: 320px;!important 
   }
 }
 `
