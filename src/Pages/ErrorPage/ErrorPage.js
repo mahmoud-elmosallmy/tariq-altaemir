@@ -1,11 +1,7 @@
-
 export default function ErrorPage() {
-    
     return (
-        <>
-            <div className="errorpage">
-                ErrorPage
-            </div>
-        </>
-    );
-}   
+        <div className="ErrorPage">
+            ErrorPage
+        </div>
+    )
+}

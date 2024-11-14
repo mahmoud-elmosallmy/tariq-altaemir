@@ -7,38 +7,14 @@ export const GlobalStyle = createGlobalStyle`
   padding: 0;
   box-sizing: border-box;
   @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
-  // font-family: "Work Sans", sans-serif;
 }
 
 
 html {
   font-size: 62.5%;
-  /* scroll-behavior: smooth; */
-  /* 1rem = 10px */
   overflow-x: hidden;
 }
 
-// body {
-//   overflow-x: hidden;
-//   scrollbar-color: rgb(98 84 243);
-//   scrollbar-width: thin;
-// }
-
-// body::-webkit-scrollbar {
-//   width: 1.5rem;
-// }
-
-// body::-webkit-scrollbar-track {
-//    background-color: rgb(24 24 29);
-// }
-
-// body::-webkit-scrollbar-thumb {
- 
-//   background: #fff;
-//   border: 5px solid transparent;
-//   border-radius: 9px;
-//   background-clip: content-box;
-// }
 
 .container {
   padding-left: 15px;
@@ -91,11 +67,6 @@ li {
 
 
 ${"" /* resuable code section  */}
-
-// .container {
-//   max-width: 120rem;
-//   margin: 0 auto;
-// }
 
 .grid {
   display: grid;
@@ -164,38 +135,23 @@ input, textarea{
     font-size: 1.8rem;
     cursor: pointer;
     }
+@media screen and (max-width: 768px) {
+    .container {
 
-@media (min-width: ${({ theme }) => theme.media.larg}) {
-    .container {
-      width: 1170px;
-      // padding: 0 3.2rem;
-  }
-}
-@media (min-width: ${({ theme }) => theme.media.tab}) {
-    .container {
-      // max-width: 130rem;
-      padding: 0 3.2rem;
-  }
-  .container {
-    width: 970px;
-  }
-}
-
-@media (min-width: ${({ theme }) => theme.media.mobile}) {
-    html {
-    font-size: 50%;
-  }
-    .container {
-      width: 750px;
     }
 }
 
-.grid{
-  gap: 3.2rem;
-}
-      .grid-two-column , .grid-three-column, .grid-four-column{
-          grid-template-columns: 1fr;
-        }
+// Large devices (desktops, 992px and up)
+@media screen and (min-width: 992px) { 
+    .container {
+        
     }
+}
 
+// X-Large devices (large desktops, 1200px and up)
+@media screen and (min-width: 1200px) { 
+    .container {
+        
+    }
+}
 `;
