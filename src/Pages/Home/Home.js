@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Carousels from "../../Components/Carousels/CarouselsSlide";
-
+import AboutHome from "../../Section/Home/AboutHome";
+import OurBusiness from "../../Section/Home/OurBusiness";
 
 export default function Home() {
     return (
@@ -8,36 +9,8 @@ export default function Home() {
             <Carousels />
             <div className="container">
                 <div className="main_home">
-                    <div className="main_title">
-                        <h2>ماذا نقدم لعملائنا</h2>
-                        <p>.نؤمن بأن الأفعال أقوى من الكلمات، لذا نُركز على تقديم خدمات مُتميزة تُحقق نتائج مُثبتة</p>
-                    </div>
-                    <div className="discreption">
-                        <div className="box_dis">
-                            <h3>أعمال الانشاءات</h3>
-                            <p>نُقدم خدمات إنشائية متكاملة لبناء المباني والمنشآت السكنية والتجارية والصناعية، من التخطيط والتصميم إلى التنفيذ والتشطيب. نلتزم بأعلى معايير الجودة والسلامة، ونضمن لك تسليم مشروعك في الوقت المحدد ووفقًا لأعلى المواصفات.</p>
-                        </div>
-                        <div className="box_dis">
-                            <h3>التشطيب والترميم والديكور</h3>
-                            <p>خبرتنا في التشطيب والترميم والديكور تجعل من مساحتك تحفة فنية، من خلال دهانات وأرضيات وجدران وأثاث ينسجم مع ذوقك. نُعيد الحياة للمباني التالفة ونصمم أماكن فريدة بتجهيزات مبتكرة واهتمام بأدق التفاصيل والجودة.</p>
-                        </div>
-                        <div className="box_dis">
-                            <h3>تنسيق حدائق</h3>
-                            <p>نُقدم خدمات تنسيق الحدائق باحترافية عالية، ونصمم مساحات خضراء جميلة ومريحة تناسب ذوقك واحتياجاتك. نستخدم أفكارًا مبتكرة ونباتات مناسبة وتجهيزات حديثة لخلق واحة من السكينة والجمال.</p>
-                        </div>
-                        <div className="box_dis">
-                            <h3>تصميم معماري</h3>
-                            <p>نُقدم خدمات تصميم معماري متميزة تُحوّل أفكارك إلى تصاميم مبتكرة وعملية تلبي احتياجاتك وتحقق رؤيتك. نُولي اهتمامًا كبيرًا بالتفاصيل ونستخدم أحدث التقنيات لإنشاء مشاريع معمارية فريدة وجذابة.</p>
-                        </div>
-                        <div className="box_dis">
-                            <h3>إدارة المشاريع</h3>
-                            <p>نقدم خدمات إدارة المشاريع وحصر الكميات والمواصفات بدقة واحترافية. نُنظّم ونُشرف على جميع مراحل المشروع، من التخطيط والتنفيذ إلى التسليم، لضمان إنجازه في الوقت المحدد ووفقًا للمعايير المطلوبة.</p>
-                        </div>
-                        <div className="box_dis">
-                            <h3>التسويق العقاري</h3>
-                            <p>نُقدم خدمات تسويق عقاري مُتكاملة تُساعدك على بيع أو تأجير عقارك بسرعة وبأفضل سعر. مع فريقنا المُحترف وأدواتنا الحديثة، ستحظى بتجربة تسويقية استثنائية تُحقق لك النجاح.</p>
-                        </div>
-                    </div>
+                    <AboutHome />
+                    <OurBusiness />
                 </div>
             </div>
         </HomeBox>
@@ -45,31 +18,33 @@ export default function Home() {
 }
 
 const HomeBox = styled.div`
-.main_home {
-    padding: 100px 0 100px 0;
+direction: rtl;
+
+.about_home , .ourbusiness {
+    padding: 50px 0 50px 0;
+}
+.main_title {
     text-align: center;
     diretion: rtl;
     font-weight:bold;
-    
-    p {
-        color:#777;
-    }
-}
-.main_title {
     margin-bottom: 20px;
-
+    
     h2 {
         font-size: 36px
+    }
+    p {
+        color:#777;
     }
 }
 
 .discreption {
     display: grid;
     grid-template-columns: repeat(auto-fill , minmax(280px, 1fr));
-    gap:30px
-
+    gap:30px;
+    text-align: center;
+    
     .box_dis {
-
+        
         h3 {
             margin-bottom: 12px
         }

@@ -55,7 +55,6 @@ const HeaderMain = styled.div`
 
     width: 100%;
     background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 13px -3px;
     font-weight: bold;
 
     .header {
@@ -63,6 +62,7 @@ const HeaderMain = styled.div`
         z-index: 99999;
         background-color: white;
         width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 13px -3px;
     }
     .box_header {
         display: flex;
