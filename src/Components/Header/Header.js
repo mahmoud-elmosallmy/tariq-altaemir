@@ -24,10 +24,11 @@ export default function Header() {
                         <div className={menuIcon ? "nav_bar active" : "nav_bar"}>
 
                             <div className="links">
-                                <div className="link"><Link to={'./'} onClick={() => setMenuIcon(false)} >Home</Link></div>
-                                <div className="link"><Link to={'/about'} onClick={() => setMenuIcon(false)} >About</Link></div>
-                                <div className="link"><Link to={'/ourbusiness'} onClick={() => setMenuIcon(false)} >Our business</Link></div>
-                                <div className="link"><Link to={'/contact'} onClick={() => setMenuIcon(false)} >Contact</Link></div>
+                                <div className="link"><Link to={'./'} onClick={() => setMenuIcon(false)} >الرئسية</Link></div>
+                                <div className="link"><Link to={'/about'} onClick={() => setMenuIcon(false)} >من نحن</Link></div>
+                                <div className="link"><Link to={'/ourbusiness'} onClick={() => setMenuIcon(false)} >أعمالنا</Link></div>
+                                <div className="link"><Link to={'/certificates'} onClick={() => setMenuIcon(false)} >الشهادات</Link></div>
+                                <div className="link"><Link to={'/contact'} onClick={() => setMenuIcon(false)} >تواصل معنا</Link></div>
                             </div>
 
                             <div className='mobile-navbar-btn'>
@@ -55,6 +56,14 @@ const HeaderMain = styled.div`
     width: 100%;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 13px -3px;
+    font-weight: bold;
+
+    .header {
+        position: fixed;
+        z-index: 99999;
+        background-color: white;
+        width: 100%;
+    }
     .box_header {
         display: flex;
         justify-content: space-between;
@@ -70,6 +79,7 @@ const HeaderMain = styled.div`
         .links {
             display: flex;
             gap: 50px;
+            flex-direction: row-reverse;
 
             a {
                 text-decoration: none;
@@ -142,10 +152,15 @@ const HeaderMain = styled.div`
         transform-origin: right;
         transition: all .3s linear;
 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
         a {
             font-size: 40px;
             font-weight: bold;
-            background-color: #ff5000;
+            background-color: #5171ff;
             color: white;
             padding: 15px;
         }
