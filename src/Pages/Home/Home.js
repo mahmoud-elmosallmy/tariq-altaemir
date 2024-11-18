@@ -17,6 +17,7 @@ export default function Home() {
                     <OurStrength />
                     <div className="video">
                         <video autoPlay loop muted playsInline className="background_clip">
+                            <div className="black"></div>
                                 <source src={video} type="video/mp4" />
                         </video>
                         {/* <div className="black">
@@ -83,7 +84,7 @@ direction: rtl;
 }
 .video {
     width: 100%;
-    height: 56vh;
+    // height: 56vh;
     display:flex;
     align-items center;
     justify-content: center;
