@@ -43,7 +43,7 @@ padding: 30px 0 30px 0;
 
 .boxs_footer {
     display: grid; 
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     text-align: right;
 
     .box {
@@ -66,6 +66,16 @@ span {
         color: white;
         margin-right: 13px;
         text-decoration: none;
+    }
+}
+
+
+
+
+
+@media (max-width: 992px) {
+    .boxs_footer {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     }
 }
 `;
