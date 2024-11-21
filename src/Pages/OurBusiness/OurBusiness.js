@@ -1,10 +1,14 @@
 import styled from "styled-components";
 import ConstructionWork from "../../Section/OurBusiness/ConstructionWork";
+import InteriorFinishingWorks from "./InteriorFinishingWorks";
+import ExteriorFinishingWorks from "./ExteriorFinishingWorks";
 
 export default function OurBusiness() {
     return (
         <MainOurBusiness>
             <ConstructionWork />
+            <InteriorFinishingWorks />
+            <ExteriorFinishingWorks />
         </MainOurBusiness>
     )
 }
@@ -13,6 +17,9 @@ const MainOurBusiness = styled.div`
 
 padding: 110px 0 50px 0;
 
+.parent {
+    margin-top: 30px;
+}
 h2 {
 text-align: center;
 }
