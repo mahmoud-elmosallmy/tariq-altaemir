@@ -38,6 +38,11 @@ const responsive = {
     breakpoint: { max: 767, min: 464 },
     items: 2,
     slidesToSlide: 1 // optional, default to 1.
+  },
+  minmobile: {
+    breakpoint: { max: 464, min: 200 },
+    items: 1,
+    slidesToSlide: 1 // optional, default to 1.
   }
 };
 const sliderImageUrl = [
