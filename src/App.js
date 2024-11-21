@@ -6,6 +6,7 @@ import OurBusiness from "./Pages/OurBusiness/OurBusiness";
 import Contact from "./Pages/Contact/Contact";
 import ErrorPage from "./Pages/ErrorPage/ErrorPage";
 import Footer from "./Components/Footer/Footer";
+import Certificates from "./Pages/Certificates/Certificates";
 
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/ourbusiness" element={<OurBusiness />} />
+            <Route path="/certificates" element={<Certificates />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/*" element={<ErrorPage />} />
           </Routes>

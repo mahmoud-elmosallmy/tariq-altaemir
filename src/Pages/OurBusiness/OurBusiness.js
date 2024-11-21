@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import ConstructionWork from "../../Section/OurBusiness/ConstructionWork";
-import InteriorFinishingWorks from "./InteriorFinishingWorks";
-import ExteriorFinishingWorks from "./ExteriorFinishingWorks";
+import InteriorFinishingWorks from "../../Section/OurBusiness/InteriorFinishingWorks";
+import ExteriorFinishingWorks from "../../Section/OurBusiness/ExteriorFinishingWorks";
+import LandscapingWorks from "../../Section/OurBusiness/LandscapingWorks";
 
 export default function OurBusiness() {
     return (
@@ -9,6 +10,7 @@ export default function OurBusiness() {
             <ConstructionWork />
             <InteriorFinishingWorks />
             <ExteriorFinishingWorks />
+            <LandscapingWorks />
         </MainOurBusiness>
     )
 }
@@ -21,7 +23,7 @@ padding: 110px 0 50px 0;
     margin-top: 30px;
 }
 h2 {
-text-align: center;
+    text-align: center;
 }
 .slider {
   margin:0 20px;
@@ -35,15 +37,15 @@ text-align: center;
 }
 
 .react-multi-carousel-list {
-padding: 0rem 0 2rem 0;
+    padding: 0rem 0 2rem 0;
 }
 
 .custom-dot-list-style button{
-border: none;
-background: rgb(255, 68, 68);
+    border: none;
+    background: rgb(255, 68, 68);
 }
 .react-multi-carousel-dot.react-multi-carousel-dot--active button{
-background: rgb(255, 68, 68) !important;
+    background: rgb(255, 68, 68) !important;
 }
 
 `;
