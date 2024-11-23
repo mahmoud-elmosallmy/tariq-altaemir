@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components"
+import { IoLogoWhatsapp } from "react-icons/io";
+
 
 export default function Footer() {
     
@@ -20,6 +22,10 @@ export default function Footer() {
                         <div className="box">
                             <h2>منصاتنا</h2>
                             <p>تابعنا على منصاتنا</p>
+                            <IoLogoWhatsapp className="green">
+                            <Link to={'https://api.whatsapp.com/send?phone=966533164853'} >تواصل معنا</Link>
+                            </IoLogoWhatsapp>
+
                         </div>
                     </div>
                     <span className="">
@@ -69,6 +75,11 @@ span {
     }
 }
 
+.green {
+    color: green;
+    font-size: 60px;
+    cursor: pointer;
+}
 
 
 

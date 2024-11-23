@@ -32,8 +32,8 @@ export default function Header() {
                             </div>
 
                             <div className='mobile-navbar-btn'>
-                                <CgMenuRightAlt 
-                                    name="menu-outline" 
+                                <CgMenuRightAlt
+                                    name="menu-outline"
                                     className="mobile-nav-icon"
                                     onClick={menuScrollOpen}
                                 />

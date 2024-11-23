@@ -20,17 +20,11 @@ export default function Home() {
                             <div className="black"></div>
                                 <source src={video} type="video/mp4" />
                         </video>
-                        {/* <div className="black">
-                            <video autoPlay loop muted playsInline className="background_clip">
-                                <source src={video} type="video/mp4" />
-                            </video>
-                        </div> */}
                         <div className="content">
                             <h1>هل تود تجديد منزلك بلمسة فنية و بأقل تكلفة؟</h1>
                             <p>نُقدم لك حلولًا إبداعية لتصميم منزلك أو مكتبك بجودة عالية و بأسعار تناسب جميع الأذواق.</p>
                             <Link to="./contact">تواصل معنا</Link>  
                         </div>
-                        {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/OSE5RnV2aGo?si=agKsGuZgz7kKmjUe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
                     </div>
                 </div>
             </div>
