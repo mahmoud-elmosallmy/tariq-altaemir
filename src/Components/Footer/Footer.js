@@ -22,9 +22,9 @@ export default function Footer() {
                         <div className="box">
                             <h2>منصاتنا</h2>
                             <p>تابعنا على منصاتنا</p>
-                            <IoLogoWhatsapp className="green">
-                            <Link to={'https://api.whatsapp.com/send?phone=966533164853'} >تواصل معنا</Link>
-                            </IoLogoWhatsapp>
+                            <Link to={'https://api.whatsapp.com/send?phone=966533164853'} >
+                                <IoLogoWhatsapp className="green" />
+                            </Link>
 
                         </div>
                     </div>

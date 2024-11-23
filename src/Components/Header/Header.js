@@ -66,7 +66,7 @@ const HeaderMain = styled.div`
     }
     .box_header {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         height: 60px;
 
