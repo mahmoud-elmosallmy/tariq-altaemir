@@ -122,6 +122,10 @@ const HeaderMain = styled.div`
 
 
     @media screen and (max-width: 767px) {
+
+    .box_header {
+        justify-content: space-between;
+    }   
     .links {
         height: 100vh;
         position: absolute;

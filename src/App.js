@@ -7,6 +7,7 @@ import Contact from "./Pages/Contact/Contact";
 import ErrorPage from "./Pages/ErrorPage/ErrorPage";
 import Footer from "./Components/Footer/Footer";
 import Certificates from "./Pages/Certificates/Certificates";
+import ScrollUp from "./Components/ScrollUp/ScrollUp";
 
 
 export default function App() {
@@ -27,7 +28,7 @@ export default function App() {
             <Route path="/*" element={<ErrorPage />} />
           </Routes>
         </div>
-
+        <ScrollUp />
         <Footer />
     </div>
   );
