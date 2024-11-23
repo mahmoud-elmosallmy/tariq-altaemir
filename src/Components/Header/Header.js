@@ -28,7 +28,7 @@ export default function Header() {
                                 <div className="link"><Link to={'/about'} onClick={() => setMenuIcon(false)} >من نحن</Link></div>
                                 <div className="link"><Link to={'/ourbusiness'} onClick={() => setMenuIcon(false)} >أعمالنا</Link></div>
                                 <div className="link"><Link to={'/certificates'} onClick={() => setMenuIcon(false)} >الشهادات</Link></div>
-                                <div className="link"><Link to={'/contact'} onClick={() => setMenuIcon(false)} >تواصل معنا</Link></div>
+                                <div className="link"><Link to={'https://api.whatsapp.com/send?phone=966533164853'} onClick={() => setMenuIcon(false)} >تواصل معنا</Link></div>
                             </div>
 
                             <div className='mobile-navbar-btn'>

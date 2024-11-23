@@ -19,8 +19,12 @@ const MainOurBusiness = styled.div`
 
 padding: 110px 0 50px 0;
 
+
 .parent {
     margin-top: 30px;
+    background-color: lightcyan;
+    border-radius: 20px;
+    padding: 16px;  
 }
 h2 {
     text-align: center;
