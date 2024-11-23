@@ -50,12 +50,18 @@ export default function ImageCertificates() {
 
 const MainImageCertificates = styled.div`
 
+h2 {
+    margin-bottom: 20px;
+}
+
 .main_boxs {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
 
     .box {
-        padding: 18px;    
+        padding: 18px;
+        box-shadow: 5px 22px 27px -3px #ccc;   
 
         img {
             width:100%;
